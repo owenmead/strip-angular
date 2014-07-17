@@ -13,7 +13,12 @@ angular.module('app', [])
 			link: function(scope, element, attrs) {
 				$interval(function() {
 					element[0].style.display = element[0].style.display == 'none' ? 'inline' : 'none';
-				}, 500);
+				}, 750);
 			}
 		}
+	})
+	.filter('up', function() {
+		return function(input) {
+			return input.toUpperCase();
+		};
 	})
