@@ -1,0 +1,19 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Stripped Down Angular</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body ng-app="app">
+    <script src="angular.js"></script>
+    <script src="app.js"></script>
+
+    <div ng-controller="ctrl">
+        <input type="text" ng-model="inputz"> {{ inputz }}
+        <p ng-repeat="thing in stuff">
+            <blink>{{ thing }}</blink>
+        </p>
+    </div>
+</body>
+</html>
